@@ -1,6 +1,6 @@
 <template>
     <div>
-
+detalhe
     </div>
 </template>
 
