@@ -1,25 +1,22 @@
 <template>
   <v-app>
-    <v-toolbar app>
+    <v-toolbar app >
       <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+        <span>Vue-crud-cliente</span>        
       </v-toolbar-title>
-      <v-spacer></v-spacer>
       <v-btn
         flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
       >
-        <span class="mr-2">Latest Release</span>
+       <router-link to="/">Lista</router-link> 
+      </v-btn>
+        <v-btn
+        flat
+      >
+       <router-link to="/create-customer">Novo</router-link> 
       </v-btn>
     </v-toolbar>
 
     <v-content>
-      <div id="nav">
-      <router-link to="/">Lista</router-link> |
-      <router-link to="/create-customer">Novo</router-link>
-    </div>
 <router-view/>
     </v-content>
   </v-app>
