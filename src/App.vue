@@ -4,18 +4,11 @@
       <v-toolbar-title class="headline text-uppercase">
         <span>Vue-crud-cliente</span>        
       </v-toolbar-title>
-      <v-btn
-        flat
-      >
-       <router-link to="/">Lista</router-link> 
-      </v-btn>
-        <v-btn
-        flat
-      >
-       <router-link to="/create-customer">Novo</router-link> 
-      </v-btn>
+       <v-toolbar-items class="hidden-sm-and-down">
+      <v-btn flat><router-link to="/">Lista</router-link> </v-btn>
+      <v-btn flat> <router-link to="/create-customer">Novo</router-link> </v-btn>     
+    </v-toolbar-items>
     </v-toolbar>
-
     <v-content>
 <router-view/>
     </v-content>
